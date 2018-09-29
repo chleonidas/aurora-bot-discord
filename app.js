@@ -113,4 +113,4 @@ client.on('message', message => {
 });
 
 
-client.login('yaprak');
+client.login(process.env.BOT_TOKEN);
