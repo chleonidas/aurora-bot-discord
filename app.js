@@ -1,19 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-module.exports.run = async (bot, message , args) => {
-
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("oof.");
-    if(!args[0]) return message.channel.send("off");
-    message.channel.bulkDelete(args[0]).then(() => {
-        message.channel.send('${args[0]} Mesaj Temizlendi').then(msg => msg.delete(5000));
-    })
-}
-
-module.exports.help = {
-    name:"clear"
-}
-
 client.on('ready', () => {
   console.log(`[BOT] ${client.user.tag} Adıyla Giriş Yaptı!`);
 });
