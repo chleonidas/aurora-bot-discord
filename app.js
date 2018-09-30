@@ -11,7 +11,7 @@ module.exports.run = async (bot, message , args) => {
 }
 
 module.exports.help = {
-    name:"temizle"
+    name:"clear"
 }
 
 client.on('ready', () => {
