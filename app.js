@@ -112,6 +112,5 @@ client.on('message', message => {
   }
 });
 
-emitter.setMaxListeners(250)
 
 client.login(process.env.BOT_TOKEN);
