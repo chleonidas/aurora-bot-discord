@@ -69,6 +69,8 @@ client.on('message', message => {
   if (!message.guild) return;
 
   if (message.content.startsWith('!uçantekme')) {
+      if(!message.member.roles.some(r=>["Administrator"].includes(r.name)))
+    return message.reply("Admin değilsiniz!");
     const user = message.mentions.users.first();
     if (user) {
       const member = message.guild.member(user);
@@ -91,6 +93,8 @@ client.on('message', message => {
 client.on('message', message => {
   if (!message.guild) return;
   if (message.content.startsWith('!ban')) {
+      if(!message.member.roles.some(r=>["Administrator"].includes(r.name)))
+    return message.reply("Admin değilsiniz!");
     const user = message.mentions.users.first();
     if (user) {
       const member = message.guild.member(user);
