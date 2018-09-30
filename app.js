@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-emitter.setMaxListeners()
 
 client.on('ready', () => {
   console.log(`[BOT] ${client.user.tag} Adıyla Giriş Yaptı!`);
@@ -112,5 +111,7 @@ client.on('message', message => {
     }
   }
 });
+
+emitter.setMaxListeners()
 
 client.login(process.env.BOT_TOKEN);
