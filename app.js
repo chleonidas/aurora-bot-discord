@@ -36,12 +36,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'yıkık') {
-    msg.reply(msg.user === ('ColaCherry#1753') , 'sunucumuzun yıkığı');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'Selamun Aleyküm') {
     msg.reply('Aleyküm Selam Hoşgeldin <3 İyi eğlenceler');
   }
