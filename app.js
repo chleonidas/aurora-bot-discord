@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const client = new Discord.user();
 
 client.on('ready', () => {
   console.log(`[BOT] ${client.user.tag} Adıyla Giriş Yaptı!`);
@@ -37,7 +38,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'yıkık') {
-    msg.reply('sunucunun yıkığı emre => ${@ColaCherry#1753}');
+    msg.reply(msg.user === ('ColaCherry#1753') , 'sunucumuzun yıkığı');
   }
 });
 
