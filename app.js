@@ -37,7 +37,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'yıkık') {
-    msg.reply('sunucunun yıkığı emre => @ColaCherry#1753');
+    msg.reply('sunucunun yıkığı emre => ${@ColaCherry#1753}');
   }
 });
 
