@@ -60,12 +60,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '!yardım') {
-    msg.reply('!uçantekme ,!ban komutu ile yetkili iseniz kick ve ban işlemini gerçekleştirebilirsiniz. ');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'Destek') {
     msg.reply('Teknik destek için sunucumuza gelebilirsiniz https://discord.gg/RudKgTb ');
   }
@@ -123,6 +117,5 @@ client.on('message', message => {
     }
   }
 });
-
 
 client.login(process.env.BOT_TOKEN);
