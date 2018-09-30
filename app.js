@@ -76,7 +76,7 @@ client.on('message', message => {
         member.kick('Denetim Kaydında görüntülenecek sebep ').then(() => {
           message.reply(`Uçan tekme başarılı ${user.tag}`);
         }).catch(err => {
-          message.reply('Kendinizi atamazsınız.');
+          message.reply('Bunu yapma yetkisine sahip değilim.');
           console.error(err);
         });
       } else {
