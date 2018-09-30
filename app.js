@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const Discord = require("discord.js")
-
 module.exports.run = async (bot, message , args) => {
 
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("oof.");
