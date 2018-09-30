@@ -36,6 +36,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'Sa') {
+    msg.reply('Aleyküm Selam Hoşgeldin <3 İyi eğlenceler');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'Selamun Aleyküm') {
     msg.reply('Aleyküm Selam Hoşgeldin <3 İyi eğlenceler');
   }
